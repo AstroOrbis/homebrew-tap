@@ -9,7 +9,6 @@ class Compoundcalc < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "build", "-r"
-    bin.install "target/release/compoundcalc"
+    system "cargo", "install", *std_cargo_args
   end
 end
