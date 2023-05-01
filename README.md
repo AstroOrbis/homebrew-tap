@@ -1,4 +1,4 @@
-# Astroorbis Tap
+# AstroOrbis' Tap
 
 ## How do I install these formulae?
 
