@@ -10,6 +10,7 @@ class Hyfetch < Formula
 	depends_on "make" => :build
 
 	def install
-	  system "make", "install"
+	  system "pwd"
+	  system "pip", "install", "."
 	end
   end
