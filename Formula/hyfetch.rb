@@ -7,10 +7,8 @@ class Hyfetch < Formula
 	head "https://github.com/hykilpikonna/hyfetch.git"
 
 	depends_on "python@3.11" => :build
-	depends_on "make" => :build
 
 	def install
-	  system "pwd"
-	  system "pip", "install", "."
+	  system "python3", "setup.py", "install"
 	end
   end
