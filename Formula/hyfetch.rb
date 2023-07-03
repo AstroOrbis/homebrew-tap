@@ -9,6 +9,6 @@ class Hyfetch < Formula
 	depends_on "python@3.11" => :build
 
 	def install
-	  system "sudo", "python3", "setup.py", "install"
+	  system "sudo", "python3", "-m", "pip", "install", "."
 	end
   end
